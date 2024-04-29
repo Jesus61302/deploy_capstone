@@ -8,7 +8,7 @@ from flask_cors import CORS, cross_origin
 import SystemInformation, UpdateFunctions, LoginFunctions, InviteHandler, HardwareInteraction
 
 #LOOK INTO SESSIONS
-app = Flask(__name__, static_folder= '../frontend/apws/build', static_url_path='')
+app = Flask(__name__, static_folder= 'frontend/apws/build', static_url_path='/')
 CORS(app)
 client = MongoClient("mongodb+srv://alexistorres1802:PsVRgNszt317idtn@apws.qpzzxgw.mongodb.net/")
 
@@ -159,9 +159,9 @@ def GetInstructions():
     response = HardwareInteraction.get_instructions_hw(sysID,client)
     return response
 
-app.route("/", methods=[])
-def serve():
-    return send_from_directory(app.static_folder, 'index.html')
+app.route("/")
+def index():
+    return app.send_static_file('index.html')
 
 
 if __name__ == "__main__":
