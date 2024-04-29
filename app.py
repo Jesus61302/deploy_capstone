@@ -7,7 +7,7 @@ from flask_cors import CORS
 import SystemInformation, UpdateFunctions, LoginFunctions, InviteHandler, HardwareInteraction
 
 #LOOK INTO SESSIONS
-app = Flask(__name__, static_folder='build', static_url_path='/')
+app = Flask(__name__, static_folder='apws/build', static_url_path='/')
 CORS(app)
 client = MongoClient("mongodb+srv://alexistorres1802:PsVRgNszt317idtn@apws.qpzzxgw.mongodb.net/")
 
@@ -164,4 +164,4 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=False,host = '0.0.0.0')
