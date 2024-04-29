@@ -18,7 +18,7 @@ function Register(props){
 
   }
     const registerPlant = async () => {
-        const response = await fetch("http://127.0.0.1:5000/register_system", {
+        const response = await fetch("https://myapws-e951a7210fa4.herokuapp.com/register_system", {
           method: "POST",
           mode: "cors",
           headers: {

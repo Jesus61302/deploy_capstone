@@ -21,7 +21,7 @@ function Plant_Settings () {
   // const remove = async () => {}
 
   const probeSet = async () => {
-    const response = await fetch("http://127.0.0.1:5000/update_settings", {
+    const response = await fetch("https://myapws-e951a7210fa4.herokuapp.com/update_settings", {
         method: 'POST',
         mode: "cors",
         headers:{

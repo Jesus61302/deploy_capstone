@@ -61,7 +61,7 @@ function CreateUser () {
       return
     }
                                        
-      const response = await fetch("http://127.0.0.1:5000/create_user", {
+      const response = await fetch("https://myapws-e951a7210fa4.herokuapp.com/create_user", {
         method: 'POST',
         mode: "cors",
         headers:{

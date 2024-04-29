@@ -7,7 +7,7 @@ function SystemRequest () {
   const [requestList, setRequest] = useState([]);
 
   const loadRequests = async () => {
-    const response = await fetch("http://127.0.0.1:5000/system", {
+    const response = await fetch("https://myapws-e951a7210fa4.herokuapp.com/system", {
       method: "POST",
       mode: "cors",
       headers: {

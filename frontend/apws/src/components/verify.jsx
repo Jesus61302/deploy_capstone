@@ -21,7 +21,7 @@ function Verify () {
   };
 
   const verify = async () => {
-    const response = await fetch("http://127.0.0.1:5000/verify", {
+    const response = await fetch("https://myapws-e951a7210fa4.herokuapp.com/verify", {
         method: 'POST',
         mode: "cors",
         headers:{

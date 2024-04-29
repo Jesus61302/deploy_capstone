@@ -12,7 +12,7 @@ function Join(props){
 
     }
     const joinPlant = async () => {
-        const response = await fetch("http://127.0.0.1:5000/join_system_request", {
+        const response = await fetch("https://myapws-e951a7210fa4.herokuapp.com/join_system_request", {
           method: "POST",
           mode: "cors",
           headers: {
