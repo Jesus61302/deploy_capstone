@@ -36,25 +36,26 @@ import Plant_Settings from "./components/settings";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Landing />}></Route>
-        <Route path="/Login" element={<Login />}></Route>
-        <Route path="/Create-User" element={<CreateUser />}></Route>
-        <Route path="/Forgot" element={<Forgot />}></Route>
-        <Route path="/Dashboard" element={<Dashboard />}></Route>
-        <Route path="/verify" element={<Verify />}></Route>
-        <Route path="/reset_password" element={<Reset_password />}></Route>
-        <Route path="/Register" element={<Register />}></Route>
-        <Route path="/Join" element={<Join />}></Route>
-        <Route path="/Plant_Settings" element={<Plant_Settings />}></Route>
-        <Route path="/plantHistory" element={<History />}></Route>
-        <Route path="*" element={<NotFound />}>
-          {/*<Route path="projects" element={<Projects />} />*/}
-          {/*/!*{ <Route path="*" element={<NoPage />} />}*!/*/}
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route path="/" element={<Landing />}></Route>
+    //     <Route path="/Login" element={<Login />}></Route>
+    //     <Route path="/Create-User" element={<CreateUser />}></Route>
+    //     <Route path="/Forgot" element={<Forgot />}></Route>
+    //     <Route path="/Dashboard" element={<Dashboard />}></Route>
+    //     <Route path="/verify" element={<Verify />}></Route>
+    //     <Route path="/reset_password" element={<Reset_password />}></Route>
+    //     <Route path="/Register" element={<Register />}></Route>
+    //     <Route path="/Join" element={<Join />}></Route>
+    //     <Route path="/Plant_Settings" element={<Plant_Settings />}></Route>
+    //     <Route path="/plantHistory" element={<History />}></Route>
+    //     <Route path="*" element={<NotFound />}>
+    //       {/*<Route path="projects" element={<Projects />} />*/}
+    //       {/*/!*{ <Route path="*" element={<NoPage />} />}*!/*/}
+    //     </Route>
+    //   </Routes>
+    // </BrowserRouter>
+    <Landing />
   );
 }
 
